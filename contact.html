@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | LenhyBoySaisie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Times new roman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.JPEG" alt="LenhyBoySaisie Logo" data-aos="zoom-in" data-aos-duration="1500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container breadcrumb-container">
+        <a href="index.html" class="btn-back">
+            <span class="icon">🏠</span> Retour à l'accueil
+        </a>
+    </div>
+
+    <section class="contact-section container" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="contact-wrapper">
+            
+            <div class="contact-form">
+                <h1>Envoyez-nous un message</h1>
+                <p>Une question ? Un projet ? Remplissez le formulaire ci-dessous.</p>
+                
+                <form action="https://formspree.io/f/xykdbyra" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Votre projet en quelques mots</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Décrivez votre besoin ici..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Direct</h2>
+                <p>Nous répondons plus rapidement via WhatsApp.</p>
+                
+                <a href="https://wa.me/24106321764?text=Salut,%20je%20souhaite%20un%20devis%20pour%20un%20service%20de%20saisie." class="whatsapp-card" target="_blank">
+                    <div class="wa-icon">💬</div>
+                    <div class="wa-text">
+                        <span>Discutez sur WhatsApp</span>
+                        <small>Réponse en moins d'une heure</small>
+                    </div>
+                </a>
+
+                <div class="other-info">
+                    <div class="info-item">
+                        <strong>📍 Localisation :</strong> Boulevard Triomphal, Libreville, Gabon
+                    </div>
+                    <div class="info-item">
+                        <strong>📧 Email :</strong> lenhyboy@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <strong>🕒 Horaires :</strong> Lun - Sam : 8h - 22h
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LenhyBoySaisie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+    const backToTopButton = document.querySelector('#backToTop');
+
+    window.addEventListener('scroll', () => {
+        // Si on défile plus de 300px vers le bas
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Animation fluide pour le retour en haut
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation (1 seconde)
+            once: true,     // L'animation ne se joue qu'une seule fois
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Saisie Professionnel | Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Times new roman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+<body>
+
+    <header>
+        <nav class="container">
+             <div class="logo">
+                <a href="index.html">
+                    <img src="logo.JPEG" alt="LenhyBoySaisie Logo" data-aos="zoom-in" data-aos-duration="1500">
+                </a>
+            </div>
+            <ul class="nav-links" data-aos="fade-left" data-aos-delay="200">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="container">
+            <h1 data-aos="fade-up">Libérez-vous des tâches administratives</h1>
+            <p data-aos="fade-left" data-aos-delay="1000">Saisie de données, transcription et mise en page rapide, précise et confidentielle.</p>
+            <a href="contact.html" class="btn-cta">Demander un devis gratuit</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container grid" data-aos="fade-down">
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Rapidité</h3>
+                <p>Vos documents livrés dans les délais les plus courts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Précision</h3>
+                <p>Un contrôle qualité rigoureux pour zéro erreur.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Confidentialité</h3>
+                <p>Vos données sont protégées et restent strictement privées.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section container" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>À propos de LenhyBoySaisie</h2>
+                <p>Avec plusieurs années d'expérience dans l'assistance administrative, nous maîtrisons les outils numériques pour transformer vos brouillons, fichiers audio et données brutes en documents professionnels exploitables.</p>
+                <ul class="check-list">
+                    <li>✅ Respect strict des délais</li>
+                    <li>✅ Confidentialité garantie à 100%</li>
+                    <li>✅ Correction orthographique incluse</li>
+                    <li>✅ Support client via WhatsApp 7j/7</li>
+                </ul>
+            </div>
+            <div class="about-stats" data-aos="fade-left" data-aos-delay="1000">
+                <div class="stat-item">
+                    <span class="stat-number">+500</span>
+                    <p>Documents saisis</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <p>Clients satisfaits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LenhyBoySaisie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+    const backToTopButton = document.querySelector('#backToTop');
+
+    window.addEventListener('scroll', () => {
+        // Si on défile plus de 300px vers le bas
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Animation fluide pour le retour en haut
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation (1 seconde)
+            once: true,     // L'animation ne se joue qu'une seule fois
+        });
+    </script>
+
+</body>
+</html>

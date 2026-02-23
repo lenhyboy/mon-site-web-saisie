@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services | LenhyBoySaisie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Times new roman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+<body>
+
+    <header>
+        <nav class="container">
+             <div class="logo">
+                <a href="index.html">
+                    <img src="logo.JPEG" alt="LenhyBoySaisie Logo" data-aos="zoom-in" data-aos-duration="1500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container breadcrumb-container">
+        <a href="index.html" class="btn-back">
+            <span class="icon">🏠</span> Retour à l'accueil
+        </a>
+    </div>
+
+    <section class="services-header">
+        <div class="container">
+            <h1>Nos Services</h1>
+            <p>Des solutions sur mesure pour la gestion de vos documents et données.</p>
+        </div>
+    </section>
+
+    <section class="services-grid container" data-aos="flip-left" data-aos-duration="3000">
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h2>Saisie de données</h2>
+            <p>Saisie kilométrique ou structurée sur Excel, Google Sheets ou vos logiciels de gestion internes (CRM, ERP).</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎙️</div>
+            <h2>Transcription Audio</h2>
+            <p>Conversion de vos fichiers audio ou vidéo en documents texte (comptes-rendus de réunions, interviews, podcasts).</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h2>Mise en page</h2>
+            <p>Formatage professionnel de documents Word, création de formulaires PDF remplissables et numérisation de documents papier.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✍️</div>
+            <h2>Rédaction & Correction</h2>
+            <p>Correction orthographique, syntaxique et réécriture pour garantir la qualité de vos communications.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h2>Présentations PowerPoint</h2>
+            <p>Création et mise en forme de vos diaporamas : saisie de texte, insertion de graphiques et design de slides professionnels.</p>
+        </div>
+
+        
+    </section>
+
+    <section class="workflow">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-grid" data-aos="fade-left" data-aos-delay="200">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p>Vous nous envoyez vos fichiers ou accès.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p>Nous effectuons la saisie avec contrôle qualité.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p>Vous recevez vos documents finalisés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LenhyBoySaisie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+     <script>
+    const backToTopButton = document.querySelector('#backToTop');
+
+    window.addEventListener('scroll', () => {
+        // Si on défile plus de 300px vers le bas
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Animation fluide pour le retour en haut
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation (1 seconde)
+            once: true,     // L'animation ne se joue qu'une seule fois
+        });
+    </script>
+
+</body>
+</html>

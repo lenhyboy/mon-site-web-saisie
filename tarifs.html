@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Tarifs | LenhyBoySaisie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Times new roman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+<body>
+
+    <header>
+        <nav class="container">
+             <div class="logo">
+                <a href="index.html">
+                    <img src="logo.JPEG" alt="LenhyBoySaisie Logo" data-aos="zoom-in" data-aos-duration="1500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html" class="active">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container breadcrumb-container">
+        <a href="index.html" class="btn-back">
+            <span class="icon">🏠</span> Retour à l'accueil
+        </a>
+    </div>
+
+    <section class="pricing-header">
+        <div class="container">
+            <h1>Tarifs Transparents</h1>
+            <p>Des tarifs simples, adaptés à vos besoins et sans frais cachés.</p>
+        </div>
+    </section>
+
+    <section class="pricing-table-container container" data-aos="fade-left" data-aos-delay="200">
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Type de Service</th>
+                    <th>Unité</th>
+                    <th>Prix Estimatif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Saisie de texte simple</strong></td>
+                    <td>La page (A4)</td>
+                    <td class="price">250 FCFA</td>
+                </tr>
+                <tr>
+                    <td><strong>Saisie de données Excel</strong></td>
+                    <td>La ligne / L'heure</td>
+                    <td class="price">Sur devis</td>
+                </tr>
+                <tr>
+                    <td><strong>Transcription Audio</strong></td>
+                    <td>La minute</td>
+                    <td class="price">400 FCFA</td>
+                </tr>
+                <tr>
+                    <td><strong>Mise en page / Correction</strong></td>
+                    <td>Le document</td>
+                    <td class="price">À partir de 500 FCFA</td>
+                </tr>
+                <tr>
+                    <td><strong>Saisie Express (Urgent)</strong></td>
+                    <td>Forfait</td>
+                    <td class="price">+ 50% du tarif</td>
+                </tr>
+                <tr>
+                    <td><strong>Conception PowerPoint</strong></td>
+                    <td>Le slide</td>
+                    <td class="price">250 FCFA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pricing-info">
+            <p>⚠️ <em>Les tarifs peuvent varier selon la complexité et la lisibilité de vos documents sources.</em></p>
+            <a href="contact.html" class="btn-cta">Obtenir un devis personnalisé</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LenhyBoySaisie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+     <script>
+    const backToTopButton = document.querySelector('#backToTop');
+
+    window.addEventListener('scroll', () => {
+        // Si on défile plus de 300px vers le bas
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Animation fluide pour le retour en haut
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durée de l'animation (1 seconde)
+            once: true,     // L'animation ne se joue qu'une seule fois
+        });
+    </script>
+
+</body>
+</html>
